@@ -3,8 +3,7 @@
  * Class Users: cssc0885, cssc0894
  * Class Information: CS530, Spring 2017
  * Assignment #1, HexDump/BinDump
- * Filename: README.md, xsd.cpp, makefile
- * File manifest: xsd.cpp
+ * Filename: xsd.cpp
  */
 
 #include <iostream>
