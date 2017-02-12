@@ -7,14 +7,12 @@ Filenames: README.md
 File manifest: README.md, xsd.cpp, makefile
 
 Compile instructions:
-	- Type "make all"
+	- Type `make` and it will compile everything
 		
 Operating instructions (include any/all command line options/arguments, 
 required inputs, etc)
-	- Type "./assign1.out" to execute the program
-	- type in the file name to be read:
-		- For example: "testfile.txt"
-	- Choose binary or hex output by entering 1 or 2 respectively
+	- Type `xsd <filename>` to execute the program for the hex output
+	- Type `xsd -b <filename>` to execute the binary output
 	
 List/description of novel/significant design decisions
 	- We had everything in the main, but we decided to split up
@@ -28,4 +26,5 @@ List/description of all known deficiencies or bugs
 	- There may be some warnings during compile, but it will run fine
 
 Lessons Learned
-	- Coordination/Communication 
+	- Coordination/Communication, finding information and adapting it 
+	to our own program
