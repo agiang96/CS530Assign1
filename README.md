@@ -26,5 +26,5 @@ List/description of all known deficiencies or bugs
 	- There may be some warnings during compile, but it will run fine
 
 Lessons Learned
-	- Coordination/Communication, finding information and adapting it 
-	to our own program(ie. Learning C++)
+	- Coordination/Communication(ie. learning GitHub), finding 
+	information and adapting it to our own program(ie. Learning C++)
