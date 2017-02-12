@@ -5,20 +5,18 @@
 #Filename: makefile
 
 CC=g++
+CFLAGS=-c
+SOURCES=xsd.cpp bin.cpp hex.cpp
+OBJECTS=$(SOURCES:.cpp=.o)
+EXEC=xsd
 
-all: xsd 
+all: $(SOURCES) $(EXEC) 
 
-xsd: xsd.o
-	g++ bin.o hex.o xsd.o -o xsd
+$(EXEC): $(OBJECTS)
+	$(CC) $(OBJECTS) -o $@
 
-xsd.o: xsd.cpp
-	$(CC) -c xsd.cpp
-
-bin.o: bin.cpp
-	$(CC) -c bin.cpp
-
-hex.o: hex.cpp
-	$(CC) -c hex.cpp
+.cpp.o:
+	$(CC) $(CFLAGS) $< -o $@
 
 clean:
-	rm -rf *.o core xsd
+	rm -rf *o core $(EXEC)

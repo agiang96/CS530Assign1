@@ -2,21 +2,21 @@ Members: Alexander Giang, Shawn Chua
 Class Users: cssc0885, cssc0894 
 Class Information: CS530, Spring 2017 
 Assignment #1, HexDump 
-Filenames: README.md 
+Filename: README.md 
 
-File manifest: README.md, xsd.cpp, makefile
+File manifest: README.md, xsd.cpp, hex.cpp, bin.cpp, xsd.h, makefile
 
 Compile instructions:
 	- Type `make` and it will compile everything
 		
-Operating instructions (include any/all command line options/arguments, 
-required inputs, etc)
-	- Type `xsd <filename>` to execute the program for the hex output
-	- Type `xsd -b <filename>` to execute the binary output
+Operating instructions:
+	- Type `xsd <filename>` to execute the hexdump
+	- Type `xsd -b <filename>` to execute the binary version
 	
 List/description of novel/significant design decisions
-	- We had everything in the main, but we decided to split up
-	the hex and binary options into different functions
+	- We had everything in the main class, but we decided to 
+	split up the hex and binary dumps into different functions 
+	with a header file
 	
 List/description of any extra features/algorithms/functionality you 
 included which were not required
@@ -27,4 +27,4 @@ List/description of all known deficiencies or bugs
 
 Lessons Learned
 	- Coordination/Communication, finding information and adapting it 
-	to our own program
+	to our own program(ie. Learning C++)
